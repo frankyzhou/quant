@@ -13,4 +13,4 @@ def get_profit_data_quater():
 
 get_profit_data_quater()
 
-data_total
+print data_total
