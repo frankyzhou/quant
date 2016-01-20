@@ -10,7 +10,6 @@ import smtplib
 from email.mime.text import MIMEText
 from email.MIMEMultipart import MIMEMultipart
 
-
 # 首先是获取沪深两市的股票列表
 # 这里得到是对应的dataframe数据结构，它是类似于excel中一片数据的数据结构，有这些列：code,代码 name,名称 industry,所属行业
 # area,地区 pe,市盈率 outstanding,流通股本 totals,总股本(万) totalAssets,总资产(万)liquidAssets,流动资产 fixedAssets,固定资产
@@ -107,14 +106,14 @@ def Output_Csv(df,Dist):
 #     content = str(Message) #正文内容
 #     body = MIMEText(content,'plain','GBK') #设置字符编码
 #     msg.attach(body)
-#     msgto = ['xx@126.com'] # 收件人地址多个联系人，格式['aa@163.com'; 'bb@163.com']
-#     msgfrom = 'xx@126.com' # 寄信人地址 ,
+#     msgto = ['zljszlj@163.com'] # 收件人地址多个联系人，格式['aa@163.com'; 'bb@163.com']
+#     msgfrom = 'zljszlj@163.com' # 寄信人地址 ,
 #     msg['subject'] = 'Finish at '+CURRENTDAY  #主题
 #     msg['date']=time.ctime() #时间
 #     #msg['Cc']='bb@junbao.net' #抄送人地址 多个地址不起作用
 #
-#     mailuser = 'xx'  # 用户名
-#     mailpwd = 'xx' #密码
+#     mailuser = 'zljszlj'  # 用户名
+#     mailpwd = 'ZL' #密码
 #     try:
 #         smtp = smtplib.SMTP()
 #         smtp.connect(r'smtp.126.com')# smtp设置
