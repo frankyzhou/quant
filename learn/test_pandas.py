@@ -64,6 +64,7 @@ print df
 print "DataFrame index:"
 print df.index
 print "DataFrame columns:"
+print "DataFrame columns:"
 print df.columns
 print "DataFrame values:"
 print df.values
