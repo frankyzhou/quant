@@ -17,7 +17,7 @@ def get_profit_data_quater():
 
 def get_sorted_data():
     for item in data_total_raw.keys():
-        data_total_sorted[item] = DataFrame.sort_values(data_total_raw[item], axis=1,ascending=False,columns="eps")
+        data_total_sorted[item] = DataFrame.sort(data_total_raw[item], axis=0,ascending=False,columns="eps")
 
 get_profit_data_quater()
 get_sorted_data()
