@@ -92,15 +92,16 @@ plot(X, S, color="green", linewidth=1.0, linestyle="-")
 # 我们将在曲线上做一个标记和一个垂直的虚线。然后，使用annotate命令来显示一个箭头和一些文本。
 t = 2*np.pi/3
 plot([t,t],[0,np.cos(t)], color ='blue', linewidth=2.5, linestyle="--")
+# 生成点，50为大小
 scatter([t,],[np.cos(t),], 50, color ='blue')
-
+# r就是用LATEX，其用法和L相同
 annotate(r'$sin(\frac{2\pi}{3})=\frac{\sqrt{3}}{2}$',
          xy=(t, np.sin(t)), xycoords='data',
          xytext=(+10, +30), textcoords='offset points', fontsize=16,
          arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.2"))
 
 plot([t,t],[0,np.sin(t)], color ='red', linewidth=2.5, linestyle="--")
-scatter([t,],[np.sin(t),], 5, color ='red')
+scatter([t,],[np.sin(t),], 50, color ='red')
 annotate(r'$cos(\frac{2\pi}{3})=-\frac{1}{2}$',
          xy=(t, np.cos(t)), xycoords='data',
          xytext=(-90, -50), textcoords='offset points', fontsize=16,
