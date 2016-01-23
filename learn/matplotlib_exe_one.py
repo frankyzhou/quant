@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-plt.figure(figsize=(6,10), dpi=80)
+plt.figure(figsize=(6,10), dpi=800)
 X1 = np.arange(1,9,1)
 # plt.suptitle("", fontsize=30)
 #------------------------------第一个----------------------------------------
