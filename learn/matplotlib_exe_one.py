@@ -71,6 +71,6 @@ plt.legend(loc='upper left')
 for i in X1:
     plt.scatter([i,],[Y1[i-1],], 50, color ='blue')
     plt.scatter([i,],[Y2[i-1],], 50, color ='red')
-plt.savefig("test.jpg")
+plt.savefig("test.pdf")
 # plt.show()
 
